@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Created on 23/07/2024--10:06PM (BANGLADESH) */
+
+
+:root {
+  --black:  rgb(19,19,19);
+  --white:  rgb(225,225,225);
+  --gray:   rgb(74,74,74);
+  --lime:   rgb(11,255,1);
+  --green:  rgb(0,205,88);
+  --grenalp:rgba(0,255,0,0.3);
+  --glass:  rgba(1,1,1,0.1);
+  --shadow: rgba(0,0,0,0.5);
+  --bprder: rgba(255,255,255,0.8)
+}
+
+@media (max-width: 446px) {
+
+
+/* 
+
+Here i tryed to remove the scroll animation for mobile devices
+*/
+.home_container {
+  scroll-snap-type: none;
+  overflow-y: scroll;
+  height: 100svh;
+  width: 100%;
+  overscroll-behavior: none;
+}
+section {
+  scroll-snap-align: none;
+  width: 100%;
+  height: 100%;
+  overscroll-behavior: none;
+}
+.first.grid {
+  scroll-snap-align: none;
+} 
+
+
+
+/* Section one */
+/* Navebars code is here */
+nav ul {
+  display: none;
+}
+nav {
+  position: fixed;
+  width: 100vw;
+  max-height: 48px;
+  z-index: 100;
+  justify-content: space-between;
+  padding: 15px;
+}
+nav .logo {
+  border-radius: 5px;
+  height: 36.11px;
+  width: 50px;
+  top: 0px;
+  border-top: 0.6px solid #fff;
+  border-left: 0.6px solid #fff;
+  box-shadow: 3px 3px 11.2px var(--shadow);
+  z-index: 11;
+}
+nav img {
+  height: 36.11px;
+  left: 2.22px;
+}
+nav .hamberger {
+  border-radius: 5px;
+  background: var(--glass);
+  height: 36.11px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  backdrop-filter: blur(5px);
+  border-top: 0.6px solid #fff;
+  border-left: 0.6px solid #fff;
+  box-shadow: 3px 3px 11.2px var(--shadow);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  z-index: 11;
+}
+.hamberger.working .hamb_1 {
+  transform: translateY(4.2px) rotate(-35deg);
+  border-radius: 10px;
+  width: 20px;
+  transition: all 0.3s ease;
+}
+.hamberger.working .hamb_2 {
+  border-radius: 10px;
+  transform: translateX(15px);
+  opacity: 0%;
+  transition: all 0.3s ease;
+}
+.hamberger.working .hamb_3 {
+  transform: translateY(-4.2px) rotate(35deg);
+  border-radius: 10px;
+  width: 20px;
+  transition: all 0.3s ease;
+}
+.hamb {
+  height: 5px;
+  width: 30px;
+  background: var(--lime);
+  transition: all 0.3s ease;
+}
+.nav_option.working {
+  height: 100vh;
+  width: 100vw;
+  background: var(--glass);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  padding-top: 60px;
+}
+.nav_option.working button {
+  width: 100%;
+  border-top: 1px solid var(--lime);
+  border-left: 1px solid var(--lime);
+}
+
+/* Here are Hire me / Contact form */
+.cross_hire_form {
+  position: absolute;
+  top: -13.9px;
+  right: -38.9px;
+}
+.cross {
+  fill: var(--lime);
+  filter: drop-shadow(0 0 15px var(--lime));
+  height: 40px;
+  width: 40px;
+}
+.hire_form {
+  max-height: 550px;
+  max-width: 434px;
+  padding: 11.2px;
+  border-radius: 16.7px;
+  gap: 11.2px;
+}
+.hire_form .left_form {
+  max-width: 183.4px;
+}
+.hire_form .left_form form {
+  gap: 8.4px;
+}
+.left_form form input {
+  border: 1.2px solid var(--lime);
+  background: transparent;
+  height: 35px;
+  width: 183.4px;
+  border-radius: 8.4px;
+  color: var(--white);
+  padding: 15px;
+}
+.left_form form textarea {
+  background: transparent;
+  border: 1.2px solid var(--lime);
+  height: 183.4px;
+  width: 183.4px;
+  border-radius: 11.2px;
+  overflow-y: scroll;
+  color: var(--white);
+  padding: 15px;
+}
+.left_form form button {
+  padding: 10px 35px;
+  color: var(--lime);
+  background: transparent;
+  border-radius: 11.2px;
+  border: 1.2px solid var(--lime);
+}
+.hire_form .right_form {
+  max-width: 166.7px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.right_form .platform_hire {
+  display: flex;
+  flex-direction: column;
+  gap: 8.4px;
+}
+.platform_hire img {
+  height: 18.9px;
+  width: 18.9px;
+  fill: var(--lime);
+}
+.plat_div {
+  display: flex;
+  align-items: center;
+  gap: 11.2px;
+  border: 1.2px solid var(--lime);
+  padding: 4.5px 8.5px;
+  border-radius: 8.4px;
+}
+.plat_div span {
+  display: none;
+  color: var(--lime);
+  font-size: 1.5rem;
+}
+
+
+
+
+/*here are first page of pc at first i removed the display grid */
+
+.first_cont_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  /* backdrop-filter: none; */
+}
+
+/* here are id card i mean grid_items_3 */
+
+.grid_items_3 {
+  height: 190px;
+  width: 275px;
+  border-radius: 19.5px;
+  right: 0;
+  margin: 10px;
+  backdrop-filter: none;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  backdrop-filter: blur(2px);
+  box-shadow: inset 2px 2px 6px rgba(255,255,255,0.3),
+              0 0 20px var(--shadow);
+              backdrop-filter: none;
+}
+.myself {
+  padding: 2.3px;
+  line-height: 10px;
+}
+.myself h1 {
+  font-size: 2.3rem;
+  line-height: 20px;
+}
+.myself p {
+  font-size: 0.9rem;
+  text-align: center;
+  text-shadow: 0 00 5px var(--shadow);
+}
+.myself button {
+  font-weight: 1000;
+  background: transparent;
+  font-size: 1rem;
+  width: 50px;
+  height: 23.4px;
+  border: none;
+  border-radius: 3.9px;
+  text-shadow: 0 0 3px var(--shadow);
+  border-top: 0.6px solid #fff;
+  border-left: 0.6px solid #fff;
+  box-shadow: 3px 3px 11.2px var(--shadow);
+  backdrop-filter: none;
+}
+.grid_items_3::before {
+  content: "";
+  height: 27.8px;
+  width: 56.7px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: 0.6px solid #00da00;
+  box-shadow: inset 0 -5px 1px #3cff3c;
+  background: #00df00;
+  position: absolute;
+  top: -27.8px;
+  left: 116.2px;
+  backdrop-filter: none;
+}
+.grid_items_3 img {
+  height: 174px;
+  border-radius: 12.5px;
+  box-shadow: 0 0 11.2px var(--shadow);
+  border-top: 0.6px solid #fff;
+  border-left: 0.6px solid #fff;
+  margin: 5px 0;
+  backdrop-filter: none;
+  position: relative;
+  top: 1px;
+  right: -2px;
+}
+.grid_items_3 .befr {
+  height: 16.7px;
+  width: 11.2px;
+  background: #00ca00;
+  position: absolute;
+  backdrop-filter: none;
+}
+.grid_items_3 .before1 {
+  right: 134.2px;
+  top: 88.9px;
+  transform: rotate(270deg);
+  box-shadow: inset 0 -10px 5px lime,
+              0 0 15px var(--shadow);
+  z-index: 1;
+  border-top: 1px solid #00ca00;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  backdrop-filter: none;
+}
+.grid_items_3 .before2 {
+  bottom: 0;
+  right: 67px;
+  box-shadow: inset 0 -10px 5px lime,
+              0 0 15px var(--shadow);
+  z-index: 1;
+  border-top: 1px solid #00ca00;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  transform: rotate(180deg);;
+  backdrop-filter: none;
+}
+.grid_items_3 .before3 {
+  right: 2.8px;
+  top: 88.9px;
+  transform: rotate(90deg);
+  box-shadow: inset 0 -10px 5px lime,
+              0 0 15px var(--shadow);
+  z-index: 1;
+  border-top: 1px solid #00ca00;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  backdrop-filter: none;
+}
+.grid_items_3 .before4 {
+  top: 0;
+  right: 67px;
+  box-shadow: inset 0 -10px 5px lime,
+              0 0 15px var(--shadow);
+  z-index: 1;
+  border-top: 1px solid #00ca00;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+  backdrop-filter: none;
+}
+
+/* Second card's code is here i mean grid items 1's code */
+.grid_items_1 {
+  height: 166.7px;
+  width: 266.7px;
+  min-height: 180px;
+  width: 275px;
+  margin: 10px;
+  border-radius: 16.7px;
+  border-top-right-radius: 0;
+  display: grid;
+  align-items: center;
+  position: relative;
+  backdrop-filter: none;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  box-shadow: inset 2px 2px 6px rgba(255,255,255,0.3),
+              0 0 20px var(--shadow);
+}
+.grid_items_1 button {
+  border: none;
+  background: none;
+  height: 41.7px;
+  width: 41.7px;
+  position: absolute;
+  right: 8.4px;
+  bottom: 8.4px;
+  border-radius: 3.9px 3.9px 11.2px 3.9px;
+  border-top: 0.6px solid #fff;
+  border-left: 0.6px solid #fff;
+  box-shadow: inset 1.3px 1.3px 3.4px rgba(255,255,255,0.1),
+              0 0 11.2px var(--shadow);
+  backdrop-filter: none;
+}
+.tick {
+  height: 25px;
+  width: 25px;
+  fill: rgba(255,255,255,0.3);
+  filter: drop-shadow(0 0 5.6px var(--shadow));
+  backdrop-filter: none;
+}
+.grid_items_1::before {
+  content: "";
+  height: 27.8px;
+  width: 56.7px;
+  position: absolute;
+  top: -27.8px;
+  right: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: 0.6px solid #00da00;
+  box-shadow: inset 0 -5px 1px #3cff3c;
+  background: #00df00;
+  backdrop-filter: none;
+}
+.grid_items_1 h1 {
+  font-size: 2.3rem;
+  line-height: 20px;
+  border-radius: 11.2px;
+  padding: 0 13.9px;
+  text-shadow: 0 0 2.3px var(--shadow);
+  opacity: 35%;
+  font-weight: 600;
+  backdrop-filter: none;
+}
+
+/* Here are Thinking equal power section */
+.grid_items_2 {
+  margin: 10px;
+  backdrop-filter: none;
+}
+.grid_items_2 .t_box {
+  backdrop-filter: blur(5px);
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  backdrop-filter: blur(2px);
+  box-shadow: inset 2px 2px 6px rgba(255,255,255,0.3),
+              0 0 20px var(--shadow);
+  backdrop-filter: none;
+}
+
+/*Here are timeline section */
+.timeline {
+  min-height: 600px;
+  width: 320px;
+  position: relative;
+  margin: auto;
+  top: 0;
+  border-radius: 0;
+  padding: 15px 10px;
+  border-radius: 8px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  backdrop-filter: blur(2px);
+  box-shadow: inset 2px 2px 6px rgba(255,255,255,0.3),
+              0 0 20px var(--shadow);
+  background: var(--glass);
+  backdrop-filter: none;
+}
+.time_items {
+  backdrop-filter: none;
+  height: 70px;
+  width: 210px;
+  background-color: var(--grenalp);
+  border-top: 0.6px solid #fff;
+  border-left: 0.6px solid #fff;
+  box-shadow: inset 1.2px 1.2px 3.4px rgba(255,255,255,0.1),
+              0 0 11.2px var(--shadow);
+  border-radius: 6.2px;
+  padding: 5.6px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  text-shadow: 0 0 3.4px var(--shadow);
+  backdrop-filter: none;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.5);
+}
+.l_side {
+  position: relative;
+  left: -44.5px;
+  top: -2.8px;
+  backdrop-filter: none;
+}
+.r_side {
+  position: relative;
+  left: 44.5px;
+  top: 2.8px;
+  backdrop-filter: none;
+}
+.first_cont_grid {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: none;
+  
+}
+
+/* Here are Second section */
+section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+.second_container {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 27.8px;
+}
+.block {
+  height: 100%;
+  width: 100%;
+  border-top: 0.6px solid #fff;
+  border-left: 0.6px solid #fff;
+  border-radius: 16.7px;
+  background: var(--glass);
+  backdrop-filter: none;
+  box-shadow: inset 1.2px 1.2px 3.4px rgba(255,255,255,0.1),
+              0 0 11.2px var(--shadow);
+}
+
+/* ↓↓↓Third section was started from here↓↓↓ */
+section:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+.third_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 27.8px;
+}
+.box1 {
+  height: 100%;
+  width: 100%;
+  border-radius: 16.7px;
+  border-left: 0.6px solid var(--bprder);
+  border-top: 0.6px solid var(--bprder);
+  background: var(--glass);
+  backdrop-filter: none;
+  box-shadow: inset 1.2px 1.2px 3.4px rgba(255,255,255,0.1),
+              0 0 11.2px var(--shadow);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Here are the code of footer*/
+.fourth_container {
+  height: 100%;
+  width: 100%;
+  padding: 16.7px;
+  border-radius: 27.8px;
+}
+.footer_container {
+  text-align: center;
+  background: var(--glass);
+  border-radius: 8.4px;
+  padding: 16.7px;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  backdrop-filter: blur(2px);
+  box-shadow: inset 2px 2px 6px rgba(255,255,255,0.3),
+              0 0 15px var(--shadow);
+  backdrop-filter: none;
+}
+.footer {
+  font-size: 9rem;
+  color: rgba(11,255,1,0.1);
+  font-weight: 1000;
+  filter: blur(6px);
+  backdrop-filter: none;
+}
+
+.home_section {
+  height: 1780px;
+  display: block;
+  backdrop-filter: none;
+  margin-bottom: 0;
+}
+
+.footer_section {
+  position: relative;
+  top: 0;
+  height: 280px;
+  padding: 0;
+  display: block;
+  backdrop-filter: none;
+}
+
+section {
+  border-radius: 0;
+  height: 100%;
+  backdrop-filter: none;
+}
+
+
+
+/* Bug fixing code for theme option */
+.first_container {
+  border-radius: 0;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.second_container.active_bg {
+  background: url(./img/white.jpg);
+}
+.second_container {
+  border-radius: 0;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.third_container {
+  border-radius: 0;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.fourth_container {
+  border-radius: 0;
+  width: 100vw;
+  height: 100%;
+}
+.fourth_container.active_bg {
+  
+}
+.active_bg_shadow {
+  box-shadow: none;
+  border: none;
+}
+
+
+/* Backdrop filter making lag in low end device here are the optimisation Code */
+._active_blure {
+  backdrop-filter: blur(1.5px);
+}
+
+.hire_me {
+  display: none;
+}
+
+.active_form {
+  display: grid;
+}
+
+
+}

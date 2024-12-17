@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <g class="s-logo" transform="matrix(5.0429182052612305, 0, 0, 5.0429182052612305, 0.8798410558653131, 81.06224301642898)">
+    <line class="sc1" x1="20.4" x2="20.4" y1="1.5" y2="65.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="sc2" x1="3" x2="3" y1="10.5" y2="33" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="sc3" x1="37.5" x2="37.5" y1="33" y2="55.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="srb1" x1="20.2" x2="38" y1="2" y2="12.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="srb2" x1="3.26" x2="37.6" y1="11" y2="33.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="srb3" x1="3" x2="37.2" y1="32.5" y2="55" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="srb4" x1="2.8" x2="20.2" y1="54.2" y2="65" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="srt1" x1="3" x2="20.2" y1="11" y2="2" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="srt2" x1="3" x2="37.5" y1="32.5" y2="12.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="srt3" x1="3" x2="37.5" y1="54.5" y2="33.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="srt4" x1="20.4" x2="37.4" y1="65" y2="55" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+  </g>
+  <g class="h-logo" transform="matrix(5.0429182052612305, 0, 0, 5.0429182052612305, 0.8798410558653131, 81.06224301642898)">
+    <line class="hc1" x1="44" x2="44" y1="12.5" y2="56.3" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hc2" x1="61" x2="61" y1="2.65" y2="65.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hc3" x1="79" x2="79" y1="12.5" y2="56.3" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hc4" x1="96" x2="96" y1="2.65" y2="65.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrt1" x1="44" x2="61" y1="12.85" y2="3" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrt2" x1="44" x2="61" y1="33.5" y2="23.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrt3" x1="44" x2="96" y1="55.4" y2="25.4" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrt4" x1="79" x2="96" y1="12.85" y2="3" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrt5" x1="79" x2="96" y1="55.4" y2="45.4" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrt6" x1="44" x2="96" y1="12.85" y2="45" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrtb2" x1="44" x2="61" y1="34" y2="45" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrtb2" x1="44" x2="61" y1="56" y2="65" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrtb2" x1="79" x2="96" y1="56" y2="65" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+    <line class="hrtb3" x1="79" x2="96" y1="13" y2="24.5" style="stroke: rgb(0, 255, 4); stroke-width: 1.90204px; stroke-linecap: round; stroke-linejoin: round;"/>
+  </g>
+</svg>
